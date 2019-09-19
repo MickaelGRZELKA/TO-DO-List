@@ -10,3 +10,6 @@ function inputlength(){
     return input.value.length;
 }
 
+function createListElement(){
+    li.insertAdjacentElement(document.createTextNode(input.value));
+}
