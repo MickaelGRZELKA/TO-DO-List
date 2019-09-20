@@ -11,7 +11,7 @@ function inputlength(){
 }
 
 function createListElement(){
-    li.createElement(li.innerHTML(input.value));
+    li.createElement(li.textContent(input.value));
     ul.createElement('li');
     input.value = "";
 }
