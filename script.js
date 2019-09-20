@@ -1,4 +1,3 @@
-'use strict'
 
 const button = document.getElementById('enter');
 const input = document.getElementById('userinput');
@@ -11,8 +10,8 @@ function inputlength(){
 }
 
 function createListElement(){
-    li.createElement(li.textContent(input.value));
-    ul.createElement('li');
+    li.appendChild(li.textContent(input.value));
+    ul.appendChild('li');
     input.value = "";
 }
 
@@ -28,5 +27,5 @@ function addByKeypress(){
     }
 }
 
-button.addEventListener('click', addByClick());
-input.addEventListener('keypress', addByKeypress());
+button.addEventListener('click', addByClick);
+input.addEventListener('keypress', addByKeypress);
