@@ -17,7 +17,11 @@ function createListElement(){
 }
 
 function addByClick(){
-    if(input.value > 0){
-        createListElement;
+    if(input.length > 0){
+        createListElement();
     }
+}
+
+function addByKeypress(){
+    if(input.length > 0 && )
 }
