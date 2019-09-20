@@ -12,4 +12,6 @@ function inputlength(){
 
 function createListElement(){
     li.insertAdjacentElement(document.createTextNode(input.value));
+    ul.insertAdjacentElement('li');
+    input.value = "";
 }
