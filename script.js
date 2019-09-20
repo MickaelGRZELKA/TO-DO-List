@@ -15,3 +15,9 @@ function createListElement(){
     ul.insertAdjacentElement('li');
     input.value = "";
 }
+
+function addByClick(){
+    if(input.value > 0){
+        createListElement;
+    }
+}
