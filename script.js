@@ -10,3 +10,11 @@ styl();
 function styl(){
 document.body.style.fontFamily = "Indie Flower";
 }
+
+function inputValueLength() {
+    return input.value.length;
+}
+
+function restartInput() {
+    input.value = "";
+}
