@@ -45,3 +45,9 @@ function addAfterClick() {
         listInUl();
     }
 }
+
+function addAfterKeypress(event) {
+    if (inputValueLength() > 0 && event.keyCode === 13) {
+        listInUl();
+    }
+}
