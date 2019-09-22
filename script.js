@@ -26,3 +26,11 @@ function textToLi() {
 function listToUl() {
     ul.insertAdjacentElement("beforeend", li);
 }
+
+function createLi() {
+    li = document.createElement("li");
+}
+
+function CapitalizeText() {
+    return input.value[0].toUpperCase() + input.value.slice(1, inputValueLength()).toLowerCase();
+}
