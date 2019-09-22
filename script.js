@@ -40,3 +40,8 @@ function listInUl() {
     listToUl();
     restartInput();
 }
+function addAfterClick() {
+    if (inputValueLength() > 0) {
+        listInUl();
+    }
+}
