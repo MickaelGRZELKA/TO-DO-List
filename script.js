@@ -51,3 +51,7 @@ function addAfterKeypress(event) {
         listInUl();
     }
 }
+
+button.addEventListener("click", addAfterClick);
+
+input.addEventListener("keypress", addAfterKeypress);
