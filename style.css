@@ -1,7 +1,10 @@
 body{
-    display: block;
-    justify-content: center;
     background-image: url(./images/mylittleponyfim.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.list{
+    display: flex;
+    justify-items: center;
+    
 }
