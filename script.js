@@ -30,6 +30,23 @@ function listToUl() {
 function createLi() {
     li = document.createElement("li");
 }
+function addSymbolSupp() {
+    let buttonSupp = document.createElement("button");
+    let supp = document.createTextNode("-");
+    buttonSupp.className = "supp";
+    buttonSupp.append(supp);
+    li.append(buttonSupp);
+}
+
+function deleteLi() {
+    let del = document.getElementsByClassName("supp");
+for ( let i = 0; i < del.length; i++) {
+    del[i].onclick = function () {
+        li = this.parentElement;
+        li.remove();
+    }
+}
+}
 
 function CapitalizeText() {
     return input.value[0].toUpperCase() + input.value.slice(1, inputValueLength()).toLowerCase();
@@ -39,6 +56,8 @@ function listInUl() {
     textToLi();
     listToUl();
     restartInput();
+    addSymbolSupp();
+    deleteLi();
 }
 function addAfterClick() {
     if (inputValueLength() > 0) {
@@ -46,8 +65,9 @@ function addAfterClick() {
     }
 }
 
-function addAfterKeypress(event) {
-    if (inputValueLength() > 0 && event.keyCode === 13) {
+function addAfterKeypress(key) {
+    let code = key.charCode;
+    if(code === 13 ) { 
         listInUl();
     }
 }
