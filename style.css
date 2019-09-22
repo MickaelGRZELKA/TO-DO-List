@@ -19,6 +19,7 @@ body .List form{
 }
 .List input{
     margin-right: 20px;
+    width: 25rem;
 }
 
 body .List ul{
@@ -29,6 +30,15 @@ body .List ul{
     font-weight: bold;
     text-shadow: 2px 2px white;
      
+}
+.List li{
+    cursor: pointer;
+   position: relative;
+   transition: 0.2s;
+   -webkit-transition: 0.2s;
+   -moz-transition: 0.2s;
+   -ms-transition: 0.2s;
+   -o-transition: 0.2s;
 }
 .supp{
     border-radius: 20px;
