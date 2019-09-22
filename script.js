@@ -34,3 +34,9 @@ function createLi() {
 function CapitalizeText() {
     return input.value[0].toUpperCase() + input.value.slice(1, inputValueLength()).toLowerCase();
 }
+function listInUl() {
+    createLi();
+    textToLi();
+    listToUl();
+    restartInput();
+}
